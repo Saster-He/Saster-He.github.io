@@ -46,7 +46,7 @@ education:
   #  Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Publication'
-      url: ''
+      url: 'https://scholar.google.com/citations?user=L5iMhdgAAAAJ&hl=en'
   - area: MS Biostatistics
     institution: University of North Carolina Chapel Hill
     date_start: 2019-08-01
