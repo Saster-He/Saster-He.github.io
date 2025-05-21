@@ -100,15 +100,15 @@ skills:
       - name: Skiing 
         description: ''
         percent: 60
-        icon: :skier:
+        icon: ":skier:"
       - name: Dogs
         description: ''
         percent: 100
-        icon: :dog2:
+        icon: ":dog2:"
       - name: Writing
         description: ''
         percent: 100
-        icon: :notebook:
+        icon: ":notebook:"
 
 languages:
   - name: English
@@ -127,7 +127,7 @@ awards:
     url: https://honorscarolina.unc.edu/research/senior-honors-thesis/
     date: '2019-05-01'
     awarder: University of North Carolina Chapel Hill
-    icon: :hatching_chick:
+    icon: ":hatching_chick:"
     summary: |
       I conducted a hypothesis test for differential gene expression of single cell RNA sequencing where gene level variability was defined as the test measure. I also wrote R functions to address the mean-variance relationship for zero-inflated RNA-seq counts (32,738 genes and 2,692 cells).
 ---
