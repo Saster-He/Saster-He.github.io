@@ -52,10 +52,10 @@ education:
     date_start: 2019-08-01
     date_end: 2020-12-01
     summary: |
-      Courses included:
-      - Theory and Methods for Survival Analysis 
-      - Applied Longitudinal Data Analysis
-      - Causal Inference in Biomedical Research
+      MS/BSPH Courses included:
+      - Biostats: Survival Analysis, Longitudinal Data Analysis, Causal Inference, Clinical Study Design 
+      - Math/Stats: Real Analysis, Stochastic Modeling, Optimization and Functional Analysis
+      - CS: Data Structures and Algorithms, Parallel Computing
   - area: BSPH Biostatistics with a Second Major in Computer Science
     institution: University of North Carolina Chapel Hill
     date_start: 2015-08-01
@@ -139,4 +139,4 @@ awards:
       I conducted a hypothesis test for differential gene expression of single cell RNA sequencing where gene level variability was defined as the test measure. I also wrote R functions to address the mean-variance relationship for zero-inflated RNA-seq counts (32,738 genes and 2,692 cells).
 ---
 
-I am a researcher interested in clinical trial design and statistical methods that support the analysis of longitudinal, multicenter, and high-dimensional data. My work focuses on building computational tools and frameworks that help both statisticians and clinicians draw reliable insights from complex, large-scale health data. I also aspire to be an effective educator who shares her enthusiasm for statistics and biomedical research with others.
+How can we improve statistical methods to better understand (recurrent) time-to-event outcomes in clinical trials? I am a PhD student in biostatistics developing statistical models and computational tools to analyze complex health data, including longitudinal, multicenter, and/or high-dimensional datasets. My research emphasizes methods for drawing reliable conclusions about broader superpopulations to effectively inform clinical decision-making and enhance patient outcomes.
