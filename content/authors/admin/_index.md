@@ -52,7 +52,7 @@ education:
     date_start: 2019-08-01
     date_end: 2020-12-01
     summary: |
-      MS/BSPH Courses included:
+      MS/BSPH courses included:
       - Biostats: Survival Analysis, Longitudinal Data Analysis, Causal Inference, Clinical Study Design 
       - Math/Stats: Real Analysis, Stochastic Modeling, Optimization and Functional Analysis
       - CS: Data Structures and Algorithms, Parallel Computing
@@ -63,7 +63,7 @@ education:
     summary: |
       Thesis work on _Weighted inference of gene expression variability in single cell RNAseq_. Advised by [Prof Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/).
 work:
-  - position: Incoming extern 
+  - position: Incoming Externship 
     company_name: Vertex Pharmaceuticals
     company_url: 'https://www.vrtx.com/home/'
     company_logo: ''
