@@ -63,6 +63,13 @@ education:
     summary: |
       Thesis work on _Weighted inference of gene expression variability in single cell RNAseq_. Advised by [Prof Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/).
 work:
+  - position: Incoming extern 
+    company_name: Vertex Pharmaceuticals
+    company_url: 'https://www.vrtx.com/home/'
+    company_logo: ''
+    date_start: 2025-08-01
+    date_end: ''
+    summary: |2-
   - position: Biostatistician
     company_name: Boston Children's Hospital
     company_url: 'https://www.childrenshospital.org/'
