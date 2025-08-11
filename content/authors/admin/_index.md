@@ -42,8 +42,7 @@ education:
     date_start: 2024-09-01
     date_end: 2028-05-01
     summary: |
-      Research work on _Mobile health data in the Electronic Framingham Heart Study_. Supervised by [Prof Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/). 
-  #  Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Conducting research on _Machine learning methods for clinical trial design_. Advised by [Prof Leo Li](https://www.linkedin.com/in/leohaolinli/). 
     button:
       text: 'Read Publication'
       url: 'https://scholar.google.com/citations?user=L5iMhdgAAAAJ&hl=en'
@@ -63,7 +62,7 @@ education:
     summary: |
       Thesis work on _Weighted inference of gene expression variability in single cell RNAseq_. Advised by [Prof Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/).
 work:
-  - position: Incoming Externship 
+  - position: RA Externship 
     company_name: Vertex Pharmaceuticals
     company_url: 'https://www.vrtx.com/home/'
     company_logo: ''
