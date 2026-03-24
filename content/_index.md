@@ -4,43 +4,72 @@ date: 2023-10-24
 type: landing
 
 design:
-  # Default section spacing
-  spacing: "4rem"
+  spacing: "5rem"
 
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
 sections:
   - block: biography
     content:
       username: admin
-      # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download Résumé
+        text: Download CV
         url: uploads/resume.pdf
     design:
       banner:
-        # Upload your cover image to the `assets/media/` folder and reference it here
         filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
       biography:
-        # Customize the style of your biography text
-        style: 'text-align: justify; font-size: 0.8em;'
+        style: 'font-size: 0.92em; line-height: 1.7;'
+
+  - block: markdown
+    content:
+      title: What I'm Working On
+      subtitle: ''
+      text: |-
+        <div class="now-grid">
+
+        **PhD Research — Boston University Biostatistics**
+        Analyzing large-scale smartwatch and mobile health data from the Electronic Framingham Heart Study (>1 billion observations) to understand associations between wearable-derived measures and cognitive function in older adults.
+        _Advisor: Prof. Chunyu Liu_
+
+        ---
+
+        **Research Extern — Vertex Pharmaceuticals** _(Aug 2025–Present)_
+        Building end-to-end automation for SDTM dataset derivation and Clinical Study Report (CSR) generation — clinical statistical infrastructure that reduces manual programming overhead and improves submission-readiness.
+
+        </div>
+    design:
+      background:
+        gradient_start: '#f8faff'
+        gradient_end: '#f1f5f9'
+        gradient_angle: 160
+
+  - block: collection
+    content:
+      title: Selected Projects
+      subtitle: ''
+      text: ''
+      count: 6
+      filters:
+        folders:
+          - project
+        featured_only: false
+      sort_by: 'Date'
+      sort_ascending: false
+    design:
+      view: card
+      columns: '2'
+
   - block: experience
     content:
       username: admin
     design:
-      # Hugo date format
-      date_format: 'January 2006'
-      # Education or Experience section first?
+      date_format: 'Jan 2006'
       is_education_first: false
+
   - block: skills
     content:
-      title: Skills & Hobbies
+      title: Skills
       username: admin
-  - block: awards
-    content:
-      title: Awards
-      username: admin
+
   - block: languages
     content:
       title: Languages
