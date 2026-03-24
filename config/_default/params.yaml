@@ -6,16 +6,16 @@
 # Appearance
 appearance:
   mode: system
-  color: blue
+  color: slate
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo résumé theme powered by Hugo Blox Builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'Boston University'
+    description: 'Jie He — PhD student in Biostatistics at Boston University. Building statistical and machine learning methods for clinical trial design, and LLM-powered automation for clinical research workflows.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -35,16 +35,13 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Jie He'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Jan 2006'
   time_format: '3:04 PM'
 
 # Site features
