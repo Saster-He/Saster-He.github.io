@@ -124,7 +124,7 @@ skills:
       - name: Skiing
         description: ''
         percent: 60
-        icon: person-simple-ski
+        icon: bolt
       - name: Dogs
         description: ''
         percent: 100
