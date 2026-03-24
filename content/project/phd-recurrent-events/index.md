@@ -43,4 +43,4 @@ The dataset spans **more than 1 billion observations**, requiring statistical me
 
 [Prof. Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/), Department of Biostatistics, Boston University School of Public Health
 
-_Ongoing PhD research (2024–2028)._
+_Completed PhD project (2024–2025)._
