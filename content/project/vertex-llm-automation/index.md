@@ -1,12 +1,13 @@
 ---
-title: 'SDTM & CSR Automation at Vertex Pharmaceuticals'
-summary: 'End-to-end automation for SDTM dataset derivation and Clinical Study Report generation — reducing manual programming overhead and improving submission-readiness of clinical statistical deliverables.'
+title: 'TFL Automation with Multi-Agent LLMs at Vertex Pharmaceuticals'
+summary: 'A multi-agent system for Tables, Figures, and Listings (TFL) generation in clinical trials. LLM agents handle SDTM mapping, dataset construction, and output generation; statistical programmers interact through a Shiny interface.'
 tags:
   - Python
   - R
   - SAS
   - Automation
   - Clinical
+  - LLM
 date: '2025-08-01'
 featured: true
 
@@ -19,25 +20,29 @@ image:
 
 ## Overview
 
-Clinical statistical programming for regulatory submissions involves significant manual effort: deriving SDTM-compliant datasets, generating analysis datasets (ADaM), and assembling Clinical Study Reports (CSRs) with standardized tables, listings, and figures. This project builds automation infrastructure to handle that overhead systematically.
+Clinical statistical programming for regulatory submissions is labor-intensive: deriving SDTM-compliant datasets, building ADaM analysis datasets, and producing Tables, Figures, and Listings (TFLs) for every study endpoint. This project automates that pipeline using a multi-agent LLM system, with statistical programmers as the humans in the loop.
 
-## What It Does
+## Architecture
 
-An end-to-end automation pipeline for clinical statistical workflows:
+The system is built around a team of specialized LLM agents, orchestrated behind a Shiny front end:
 
-1. **SDTM derivation** — Automated construction of Study Data Tabulation Model-compliant datasets from raw clinical data
-2. **CSR generation** — Automated assembly of Clinical Study Report components (tables, listings, figures) in submission-ready formats
-3. **LLM-assisted programming** — An LLM agent layer that interprets analysis specifications and assists with code generation
-4. **Quality control** — Built-in validation checks against CDISC standards and expected specifications
+- **Shiny interface** -- the programmer-facing layer where users submit analysis requests, review agent outputs, and provide corrections or approvals
+- **Routing agent** -- interprets the programmer's request and delegates to the appropriate downstream agent
+- **SDTM mapping agent** -- maps raw clinical data to SDTM domains, handling domain-specific conventions and CDISC compliance
+- **Dataset construction agent** -- derives ADaM datasets from mapped SDTM inputs, applying analysis-specific transformations
+- **Output generation agent** -- produces submission-ready tables, listings, and figures from the constructed datasets
+
+Agents pass structured outputs between each other; the programmer can intervene or redirect at any stage through the Shiny interface.
 
 ## Technical Stack
 
-- **R and SAS** — Core statistical programming and output generation
-- **Python** — Pipeline orchestration, LLM tooling, automation framework
-- **Shell scripting** — Workflow automation and environment management
+- **R / Shiny** -- programmer-facing front end and output rendering
+- **Python** -- agent orchestration, LLM tooling, pipeline framework
+- **R and SAS** -- statistical output generation and validation
+- **Shell scripting** -- environment management and workflow automation
 
 ## Why It Matters
 
-Submission-ready SDTM and CSR deliverables are a prerequisite for every drug approval. When the routine programming work is automated and reliable, statistical teams can spend their time on methodology, interpretation, and the judgment calls that actually require expertise.
+Every drug approval requires submission-ready SDTM and TFL deliverables. When the routine programming work is handled by agents, statistical teams can focus on methodology, specification review, and the judgment calls that require real expertise. The Shiny interface keeps programmers in control without requiring them to manage the underlying automation layer directly.
 
-_This project is ongoing (Aug 2025–Present). Details limited due to confidentiality._
+_This project is ongoing (Aug 2025--Present). Details limited due to confidentiality._
