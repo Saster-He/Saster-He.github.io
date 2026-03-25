@@ -62,7 +62,7 @@ education:
       Graduated with Distinction. Honors Thesis: _Weighted inference of gene expression variability in single-cell RNA-seq data_, advised by [Prof. Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/). Developed R functions to address mean-variance relationships for zero-inflated counts across 32,738 genes and 2,692 cells.
 
 work:
-  - position: Research Assistant Extern, Clinical Statistics
+  - position: Research Assistant Extern, SP & Stats
     company_name: Vertex Pharmaceuticals
     company_url: 'https://www.vrtx.com/home/'
     company_logo: ''
