@@ -27,12 +27,21 @@
 
 /* ---- Base typography ---- */
 body {
+  font-family: 'Raleway', sans-serif;
   letter-spacing: -0.01em;
+  line-height: 1.75;
 }
 
-h1, h2, h3, h4, h5 {
-  letter-spacing: -0.025em;
-  font-weight: 700;
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.015em;
+  font-weight: 600;
 }
 
 /* ---- Suppress theme accent color on links — use near-black instead ---- */
@@ -49,9 +58,10 @@ a:hover {
 
 /* ---- Navigation ---- */
 .navbar .nav-link {
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -176,6 +186,18 @@ footer {
   border-top: 1px solid var(--border);
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+/* ---- Number font (Inter) ---- */
+.wg-experience .timeline-date,
+.experience-details .timeline-date,
+time,
+.badge,
+.stat-value,
+table td,
+[data-numeric] {
+  font-family: 'Inter', sans-serif;
+  font-variant-numeric: tabular-nums lining-nums;
 }
 
 /* ---- Responsive ---- */
