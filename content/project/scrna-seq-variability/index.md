@@ -36,6 +36,6 @@ All methods implemented as R functions, using the `MAST` and `edgeR` frameworks 
 
 ## Recognition
 
-Awarded **Honors Thesis with Distinction** by the University of North Carolina at Chapel Hill, 2019.
+Awarded **Honors Thesis with Highest Distinction** by the University of North Carolina at Chapel Hill, 2019.
 
 _Advisor: [Prof. Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/), Department of Biostatistics, UNC Gillings School of Global Public Health._
