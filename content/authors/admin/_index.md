@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Biostatistics × AI Engineering
+role: Biostatistician building AI-powered clinical tools
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -62,18 +62,18 @@ education:
       Graduated with Distinction. Honors Thesis: _Weighted inference of gene expression variability in single-cell RNA-seq data_, advised by [Prof. Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/). Developed R functions to address mean-variance relationships for zero-inflated counts across 32,738 genes and 2,692 cells.
 
 work:
-  - position: Research Assistant Extern — SDTM & CSR Automation
+  - position: Research Assistant Extern
     company_name: Vertex Pharmaceuticals
     company_url: 'https://www.vrtx.com/home/'
     company_logo: ''
     date_start: 2025-08-01
     date_end: ''
     summary: |2-
-      Building end-to-end automation for clinical statistical programming workflows, with a focus on SDTM dataset construction and Clinical Study Report (CSR) generation. The goal: reduce manual overhead on routine programming tasks so statisticians can focus on methodology and interpretation.
+      Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers interact with LLM agents through a Shiny interface; agents handle SDTM mapping, dataset construction, and output generation end-to-end.
 
-      - Developing automated pipelines for SDTM-compliant dataset derivation
-      - Building CSR automation systems that generate submission-ready outputs
-      - Leveraging LLM-based tooling as part of the automation layer
+      - Designed the multi-agent architecture: routing, tool use, and agent handoffs across the TFL pipeline
+      - Built the Shiny front end that serves as the programmer-facing interface for agent interaction
+      - Agents handle SDTM domain mapping, ADaM dataset derivation, and submission-ready output generation
 
   - position: Biostatistician
     company_name: Boston Children's Hospital
@@ -117,22 +117,6 @@ skills:
         description: 'Familiar · Neural networks · Deep learning'
         percent: 50
         icon: devicon/pytorch
-  - name: Hobbies
-    color: '#52525b'
-    color_border: '#71717a'
-    items:
-      - name: Skiing
-        description: ''
-        percent: 60
-        icon: bolt
-      - name: Dogs
-        description: ''
-        percent: 100
-        icon: heart
-      - name: Writing
-        description: ''
-        percent: 100
-        icon: pencil
 
 languages:
   - name: English
@@ -144,12 +128,12 @@ languages:
 
 ---
 
-I develop statistical methods and computational tools for analyzing complex health data — with a current focus on large-scale mobile health and wearable sensor datasets.
+I'm a biostatistician and PhD student at Boston University working at the intersection of wearable health data and AI-powered clinical tools.
 
-As a PhD student at Boston University Biostatistics, I work on statistical analysis of smartwatch and digital health data from the Electronic Framingham Heart Study, examining associations between wearable-derived measures and cognitive function in older adults. Advised by Prof. Chunyu Liu.
+My PhD research (with Prof. Chunyu Liu) uses smartwatch and mobile health data from the Electronic Framingham Heart Study to study associations between digital biomarkers and cognitive function in older adults. The dataset has over 1 billion observations, so a lot of the work is about building pipelines that can actually handle that scale.
 
-Concurrently, I work as a research assistant extern at Vertex Pharmaceuticals, building automation for SDTM programming and Clinical Study Report (CSR) generation — infrastructure that makes clinical statistical workflows faster and more reliable.
+At Vertex Pharmaceuticals, I'm building a multi-agent automation system for TFL (Tables, Figures, and Listings) generation in clinical trials. Statistical programmers use a Shiny interface to interact with LLM agents that handle SDTM mapping, dataset construction, and output generation. The goal is to automate the routine parts of clinical statistical programming so teams can focus on the work that requires real judgment.
 
-Before the PhD, I spent three years at Boston Children's Hospital as a biostatistician, contributing to published research in pediatric hematology, cardiology, and critical care. I built R packages, developed Shiny apps for REDCap data management, and applied survival analysis and machine learning methods to real-world clinical data.
+Before the PhD, I spent three years at Boston Children's Hospital as a biostatistician: survival models, machine learning on EHR data, R package development, and Shiny apps for clinical data management.
 
-**Research interests**: Mobile health & wearables · Longitudinal methods for large-scale data · Clinical data automation · Statistical computing
+Outside of work, I ski, write, and am always looking for dogs to pet.
