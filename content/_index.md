@@ -26,14 +26,14 @@ sections:
       text: |-
         <div class="now-grid">
 
-        **PhD Research — Boston University Biostatistics**
+        **PhD Research at Boston University Biostatistics**
         Analyzing large-scale smartwatch and mobile health data from the Electronic Framingham Heart Study (>1 billion observations) to understand associations between wearable-derived measures and cognitive function in older adults.
         _Advisor: Prof. Chunyu Liu_
 
         ---
 
-        **Research Extern — Vertex Pharmaceuticals** _(Aug 2025–Present)_
-        Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers use a Shiny interface to interact with LLM agents that handle SDTM mapping, dataset construction, and output generation end-to-end.
+        **Research Extern at Vertex Pharmaceuticals** _(Aug 2025 to Present)_
+        Building a multi-agent system that automates the Tables, Figures, and Listings (TFL) pipeline for clinical trial submissions. Statistical programmers drive LLM agents through a Shiny interface to handle SDTM mapping, dataset construction, and output generation.
 
         </div>
     design:
@@ -73,5 +73,6 @@ sections:
   - block: markdown
     content:
       title: Languages
-      text: 'English (native) · Chinese/Mandarin (native) · German (basic)'
+      text: |-
+        English (native) · Chinese/Mandarin (native) · German (basic)
 ---
