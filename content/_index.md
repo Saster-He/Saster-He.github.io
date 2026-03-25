@@ -33,7 +33,7 @@ sections:
         ---
 
         **Research Extern — Vertex Pharmaceuticals** _(Aug 2025–Present)_
-        Building end-to-end automation for SDTM dataset derivation and Clinical Study Report (CSR) generation — clinical statistical infrastructure that reduces manual programming overhead and improves submission-readiness.
+        Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers use a Shiny interface to interact with LLM agents that handle SDTM mapping, dataset construction, and output generation end-to-end.
 
         </div>
     design:
@@ -70,8 +70,8 @@ sections:
       title: Skills
       username: admin
 
-  - block: languages
+  - block: markdown
     content:
       title: Languages
-      username: admin
+      text: 'English (native) · Chinese/Mandarin (native) · German (basic)'
 ---
