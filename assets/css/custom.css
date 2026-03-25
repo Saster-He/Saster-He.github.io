@@ -29,19 +29,24 @@
 
 /* ---- Base typography ---- */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
   letter-spacing: -0.01em;
   line-height: 1.75;
 }
 
-h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
+h1, h2, h3,
+.section-heading h1,
+.section-heading h2,
+.section-heading h3,
+[class*="wg-"] h2,
+[class*="wg-"] h3 {
+  font-family: 'Raleway', sans-serif !important;
   letter-spacing: -0.03em;
   font-weight: 800;
 }
 
 h4, h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif !important;
   letter-spacing: -0.015em;
   font-weight: 600;
 }
@@ -119,7 +124,29 @@ a:hover {
   border-radius: 0.375rem;
 }
 
+/* ---- Skills two-column layout ---- */
+.blox-resume-skills .flex.flex-col.lg\:flex-row {
+  max-width: 56rem !important;
+  align-items: flex-start !important;
+  gap: 2rem !important;
+}
+
+.blox-resume-skills .flex.flex-col.lg\:flex-row > div {
+  width: 100% !important;
+}
+
+@media (min-width: 1024px) {
+  .blox-resume-skills .flex.flex-col.lg\:flex-row > div {
+    width: 50% !important;
+  }
+}
+
 /* ---- Experience timeline ---- */
+.wg-experience h3,
+.experience-details h3 {
+  font-size: 1.15rem !important;
+}
+
 .wg-experience .timeline-date,
 .experience-details .timeline-date {
   font-size: 0.78rem;
@@ -127,11 +154,40 @@ a:hover {
   font-weight: 400;
 }
 
-/* Timeline dot/line: neutral */
-.wg-experience .timeline-item::before,
+/* Timeline dot: small minimal marker */
+.wg-experience .timeline-item::before {
+  width: 8px !important;
+  height: 8px !important;
+  min-width: 8px !important;
+  border-radius: 50% !important;
+  background-color: var(--accent) !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Hide SVG icons inside timeline dots */
+.wg-experience [class*="icon"] {
+  width: 8px !important;
+  height: 8px !important;
+  min-width: 8px !important;
+  overflow: hidden !important;
+  background-color: var(--accent) !important;
+  border-radius: 50% !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  color: transparent !important;
+}
+
+.wg-experience [class*="icon"] svg {
+  display: none !important;
+}
+
+/* Timeline connecting line: thin and subtle */
 .wg-experience .timeline-line {
+  width: 1px !important;
   background-color: var(--border) !important;
-  border-color: var(--border) !important;
 }
 
 /* ---- Project cards ---- */
