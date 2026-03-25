@@ -18,7 +18,7 @@ image:
 
 ## Motivation
 
-Most differential expression analysis in single-cell RNA-seq focuses on differences in *mean* expression between cell populations. But gene expression variability — the variance of expression across cells — carries its own biological signal. Genes that are more variable in one condition vs. another can indicate heterogeneous cell states, developmental plasticity, or disease-associated dysregulation.
+Most differential expression analysis in single-cell RNA-seq focuses on differences in *mean* expression between cell populations. But gene expression variability (the variance of expression across cells) carries its own biological signal. Genes that are more variable in one condition vs. another can indicate heterogeneous cell states, developmental plasticity, or disease-associated dysregulation.
 
 The challenge: zero-inflated count data in scRNA-seq creates a strong mean-variance dependency that biases naive variability tests. A gene with higher mean expression will appear more variable simply due to distributional properties, not biology.
 
@@ -28,7 +28,7 @@ Developed a weighted hypothesis testing framework that:
 
 - **Accounts for mean-variance dependency** in zero-inflated negative binomial count data
 - **Tests for differential variability** between cell populations using a weighted statistic that stabilizes variance estimates across the expression range
-- **Scales to large datasets** — validated on 32,738 genes across 2,692 single cells
+- **Scales to large datasets**, validated on 32,738 genes across 2,692 single cells
 
 ## Implementation
 

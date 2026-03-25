@@ -62,18 +62,18 @@ education:
       Graduated with Distinction. Honors Thesis: _Weighted inference of gene expression variability in single-cell RNA-seq data_, advised by [Prof. Di Wu](https://sph.unc.edu/adv_profile/di-wu-phd/). Developed R functions to address mean-variance relationships for zero-inflated counts across 32,738 genes and 2,692 cells.
 
 work:
-  - position: Research Assistant Extern
+  - position: Research Assistant Extern, Clinical Statistics
     company_name: Vertex Pharmaceuticals
     company_url: 'https://www.vrtx.com/home/'
     company_logo: ''
     date_start: 2025-08-01
     date_end: ''
     summary: |2-
-      Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers interact with LLM agents through a Shiny interface; agents handle SDTM mapping, dataset construction, and output generation end-to-end.
+      Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers interact with LLM agents through a Shiny interface; the agents handle SDTM mapping, analysis dataset construction, and output generation against provided specifications.
 
-      - Designed the multi-agent architecture: routing, tool use, and agent handoffs across the TFL pipeline
-      - Built the Shiny front end that serves as the programmer-facing interface for agent interaction
-      - Agents handle SDTM domain mapping, ADaM dataset derivation, and submission-ready output generation
+      - Designed a human-in-the-loop architecture using R Shiny as the front-end control panel for analyst interaction
+      - Built LLM agent pipelines that interpret analysis specifications and generate statistical programming code
+      - Automated SDTM dataset derivation and ADaM construction to reduce manual overhead on routine TFL outputs
 
   - position: Biostatistician
     company_name: Boston Children's Hospital
@@ -118,22 +118,10 @@ skills:
         percent: 50
         icon: devicon/pytorch
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese (Mandarin)
-    percent: 100
-  - name: German
-    percent: 25
-
 ---
 
-I'm a biostatistician and PhD student at Boston University working at the intersection of wearable health data and AI-powered clinical tools.
+I'm a biostatistician who builds AI-powered tools for clinical research. Most of my work lives at the intersection of rigorous statistical methodology and modern software: the kind of problems where the math matters and so does the engineering.
 
-My PhD research (with Prof. Chunyu Liu) uses smartwatch and mobile health data from the Electronic Framingham Heart Study to study associations between digital biomarkers and cognitive function in older adults. The dataset has over 1 billion observations, so a lot of the work is about building pipelines that can actually handle that scale.
-
-At Vertex Pharmaceuticals, I'm building a multi-agent automation system for TFL (Tables, Figures, and Listings) generation in clinical trials. Statistical programmers use a Shiny interface to interact with LLM agents that handle SDTM mapping, dataset construction, and output generation. The goal is to automate the routine parts of clinical statistical programming so teams can focus on the work that requires real judgment.
-
-Before the PhD, I spent three years at Boston Children's Hospital as a biostatistician: survival models, machine learning on EHR data, R package development, and Shiny apps for clinical data management.
+My PhD research at Boston University analyzes over a billion observations of smartwatch and wearable sensor data from the Electronic Framingham Heart Study, studying how digital biomarkers connect to cognitive aging in older adults. At Vertex Pharmaceuticals, I'm building a multi-agent system that automates the Tables, Figures, and Listings pipeline for clinical trial submissions, with statistical programmers driving LLM agents through a Shiny interface. Before the PhD, I spent three years at Boston Children's Hospital doing applied biostatistics across pediatric cardiology, hematology, and critical care, where I built R packages, deployed survival models on registry data, and co-authored peer-reviewed publications.
 
 Outside of work, I ski, write, and am always looking for dogs to pet.

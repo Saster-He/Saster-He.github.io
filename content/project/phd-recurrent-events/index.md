@@ -1,5 +1,5 @@
 ---
-title: 'Wearables & Cognitive Function — Electronic Framingham Heart Study'
+title: 'Wearables & Cognitive Function: Electronic Framingham Heart Study'
 summary: 'PhD research: statistical analysis of large-scale smartwatch and mobile health data (>1 billion observations) from older adults to examine associations between wearable-derived measures and cognitive function.'
 tags:
   - R
@@ -19,13 +19,13 @@ image:
 
 ## Overview
 
-Wearable devices and smartphones now generate continuous, high-resolution behavioral and physiological data at a scale that was impossible to collect in traditional epidemiological studies. The Electronic Framingham Heart Study (eFHS) is one of the first large cohort studies to integrate this data at scale — capturing smartwatch-derived measures from thousands of participants over extended follow-up periods.
+Wearable devices and smartphones now generate continuous, high-resolution behavioral and physiological data at a scale that was impossible to collect in traditional epidemiological studies. The Electronic Framingham Heart Study (eFHS) is one of the first large cohort studies to integrate this data at scale, capturing smartwatch-derived measures from thousands of participants over extended follow-up periods.
 
 This PhD project analyzes that data to investigate whether and how digital biomarkers derived from wearables (activity patterns, heart rate variability, sleep signatures) associate with cognitive function in older adults.
 
 ## Scale
 
-The dataset spans **more than 1 billion observations**, requiring statistical methods and computational pipelines designed for large-scale longitudinal data — not just larger versions of standard analyses.
+The dataset spans **more than 1 billion observations**, requiring statistical methods and computational pipelines designed for large-scale longitudinal data, not just larger versions of standard analyses.
 
 ## Methods
 
