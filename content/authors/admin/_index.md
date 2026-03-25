@@ -119,30 +119,30 @@ skills:
         icon: devicon/pytorch
   - name: Clinical Workflow
     items:
-      - name: Clinical Trial Design
-        description: 'Coursework in study design · Simulation-based model evaluation'
-        percent: 55
-        icon: beaker
-      - name: TFL Automation
-        description: 'R Shiny pipelines · Shell doc parsing · RTF output generation'
-        percent: 90
-        icon: document-text
-      - name: CDISC Standards
-        description: 'Working knowledge of SDTM/ADaM structures · Exposure through TFL tooling'
-        percent: 55
-        icon: clipboard-document-check
-      - name: SAP & Specification Interpretation
-        description: 'Translating programming notes into automated outputs'
-        percent: 80
-        icon: shield-check
       - name: Survival & Longitudinal Methods
         description: 'KM · Cox · Competing risks · RSF · Mixed-effects models · GEE'
         percent: 90
+        icon: chart-bar-square
+      - name: Real World Evidence
+        description: 'Registry outcomes/ EHRs (ELSO) · Large cohort wearables (eFHS)'
+        percent: 85
         icon: chart-bar-square
       - name: Sensitivity & Reproducibility
         description: 'Outlier diagnostics · Subgroup analyses · Reproducible R scripts'
         percent: 85
         icon: adjustments-horizontal
+      - name: SAP & Specification Interpretation
+        description: 'Translating programming notes into automated outputs'
+        percent: 80
+        icon: shield-check
+      - name: Clinical Trial Design
+        description: 'Coursework in study design · Simulation-based model evaluation'
+        percent: 55
+        icon: beaker
+      - name: CDISC Standards
+        description: 'Working knowledge of SDTM/ADaM structures · Exposure through TFL tooling'
+        percent: 55
+        icon: clipboard-document-check
 
 ---
 
