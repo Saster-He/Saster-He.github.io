@@ -26,9 +26,8 @@ sections:
       text: |-
         <div class="now-grid">
 
-        **PhD Research at Boston University Biostatistics**
-        Analyzing large-scale smartwatch and mobile health data from the Electronic Framingham Heart Study (>1 billion observations) to understand associations between wearable-derived measures and cognitive function in older adults.
-        _Advisor: Prof. Chunyu Liu_
+        **PhD Research, Boston University Biostatistics**
+        Extending super learner methods for survival prediction in complex sampling designs, with applications to longitudinal clinical data. Advised by [Dr. Haolin (Leo) Li](https://sites.google.com/view/haolin-leo-li-phd/).
 
         ---
 
