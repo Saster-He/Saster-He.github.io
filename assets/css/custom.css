@@ -154,11 +154,11 @@ a:hover {
   font-weight: 400;
 }
 
-/* Timeline dot: small minimal marker */
+/* Timeline marker: tiny quiet dot */
 .wg-experience .timeline-item::before {
-  width: 8px !important;
-  height: 8px !important;
-  min-width: 8px !important;
+  width: 4px !important;
+  height: 4px !important;
+  min-width: 4px !important;
   border-radius: 50% !important;
   background-color: var(--accent) !important;
   border: none !important;
@@ -166,11 +166,11 @@ a:hover {
   box-shadow: none !important;
 }
 
-/* Hide SVG icons inside timeline dots */
-.wg-experience [class*="icon"] {
-  width: 8px !important;
-  height: 8px !important;
-  min-width: 8px !important;
+/* Keep the marker icon container equally minimal */
+.wg-experience .timeline-item [class*="icon"] {
+  width: 4px !important;
+  height: 4px !important;
+  min-width: 4px !important;
   overflow: hidden !important;
   background-color: var(--accent) !important;
   border-radius: 50% !important;
@@ -180,7 +180,7 @@ a:hover {
   color: transparent !important;
 }
 
-.wg-experience [class*="icon"] svg {
+.wg-experience .timeline-item [class*="icon"] svg {
   display: none !important;
 }
 
