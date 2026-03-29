@@ -73,5 +73,5 @@ sections:
     content:
       title: Languages
       text: |-
-        English (native) · Chinese/Mandarin (native) · German (basic)
+        English (professional) · Chinese/Mandarin (native) · German (basic)
 ---
