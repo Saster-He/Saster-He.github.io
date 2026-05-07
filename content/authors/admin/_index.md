@@ -82,7 +82,7 @@ work:
     date_start: 2021-06-01
     date_end: '2024-09-01'
     summary: |2-
-      Statistical collaborator in the Biostatistics and Research Department, supervised by Dr. Edie Weller. Contributed to published research across pediatric hematology, cardiology, critical care, and COVID-19 outcomes.
+      Statistical collaborator in the Biostatistics and Research Department, supervised by [Dr. Edie Weller](https://research.childrenshospital.org/researchers/edie-weller). Contributed to published research across pediatric hematology, cardiology, critical care, and COVID-19 outcomes.
 
       - **Simulation study**: Applied and evaluated ML classification models (on EHR-based simulated structures) to assess performance across varying data types and correlation patterns
       - **Survival analysis**: Built Cox models with frailty for clustered right-censored data; validated theoretical frameworks for time-dependent covariates
