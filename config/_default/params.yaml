@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: 'Boston University'
-    description: 'Jie He — PhD student in Biostatistics at Boston University. Building statistical and machine learning methods for clinical trial design, and LLM-powered automation for clinical research workflows.'
+    description: 'Jie He — PhD student in Biostatistics at Boston University. Building statistical and machine learning methods for clinical trial design, TFL automation, and early-stage natural-language LLM agents for clinical research workflows.'
     twitter: ''
   analytics:
     google_analytics: ''

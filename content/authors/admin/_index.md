@@ -41,7 +41,9 @@ education:
     date_start: 2024-09-01
     date_end: 2028-05-01
     summary: |
-      Analyzing large-scale mobile health and wearable sensor data from older adult populations to understand associations between digital biomarkers and cognitive function. Core dataset: Electronic Framingham Heart Study (>1 billion observations). Advised by [Prof. Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/).
+      Current doctoral research: extending super learner methods for survival prediction in complex sampling designs. Co-advised by [Dr. Haolin (Leo) Li](https://sites.google.com/view/haolin-leo-li-phd/) and [Dr. Scarlett Bellamy](https://www.bu.edu/sph/profile/scarlett-bellamy/).
+
+      eFHS wearable/mobile health project, advised by [Prof. Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/): analyzed >1 billion observations from older adults using R, SAS, and shell scripting to study associations between digital biomarkers and cognitive function.
     button:
       text: 'Google Scholar'
       url: 'https://scholar.google.com/citations?user=L5iMhdgAAAAJ&hl=en'
@@ -69,11 +71,12 @@ work:
     date_start: 2025-08-01
     date_end: ''
     summary: |2-
-      Building a multi-agent automation system for Tables, Figures, and Listings (TFL) generation in clinical trials. Statistical programmers interact with LLM agents through a Shiny interface; the agents handle SDTM mapping, analysis dataset construction, and output generation against provided specifications.
+      Built a Shiny/button-driven automation workflow for Tables, Figures, and Listings (TFL) generation in clinical trials. Current work adds an initial-stage LLM-agent layer so statistical programmers can request auto TFL generation in natural language instead of clicking UI buttons.
 
-      - Designed a human-in-the-loop architecture using R Shiny as the front-end control panel for analyst interaction
-      - Built LLM agent pipelines that interpret analysis specifications and generate statistical programming code
-      - Automated SDTM dataset derivation and ADaM construction to reduce manual overhead on routine TFL outputs
+      - Designed and built a human-in-the-loop Shiny control panel for analyst review, revision, and approval
+      - Automated specification-driven SDTM mapping, ADaM construction logic, and routine TFL output generation
+      - Initiated a natural-language LLM-agent layer for translating analyst requests into automated TFL generation workflows
+      - Added validation checks against CDISC standards and expected specifications before outputs are surfaced for review
 
   - position: Biostatistician
     company_name: Boston Children's Hospital
@@ -148,6 +151,6 @@ skills:
 
 I'm a biostatistician who builds AI-powered tools for clinical research. Most of my work lives at the intersection of rigorous statistical methodology and modern software: the kind of problems where the math matters and so does the engineering.
 
-My PhD research at Boston University analyzes over a billion observations of smartwatch and wearable sensor data from the Electronic Framingham Heart Study, studying how digital biomarkers connect to cognitive aging in older adults. At Vertex Pharmaceuticals, I'm building a multi-agent system that automates the Tables, Figures, and Listings pipeline for clinical trial submissions, with statistical programmers driving LLM agents through a Shiny interface. Before the PhD, I spent three years at Boston Children's Hospital doing applied biostatistics across pediatric cardiology, hematology, and critical care, where I built R packages, deployed survival models on registry data, and co-authored peer-reviewed publications.
+My PhD research at Boston University extends super learner methods for survival prediction in complex sampling designs. I also worked on the Electronic Framingham Heart Study, analyzing over a billion smartwatch and wearable sensor observations to study how digital biomarkers connect to cognitive aging in older adults. At Vertex Pharmaceuticals, I built a Shiny/button-driven automation workflow for clinical TFL generation and am developing an initial-stage LLM-agent layer for natural-language TFL requests. Before the PhD, I spent three years at Boston Children's Hospital doing applied biostatistics across pediatric cardiology, hematology, and critical care, where I built R packages, deployed survival models on registry data, and co-authored peer-reviewed publications.
 
 Outside of work, I ski, write, and am always looking for dogs to pet.

@@ -1,6 +1,6 @@
 ---
 title: 'Wearables & Cognitive Function: Electronic Framingham Heart Study'
-summary: 'PhD research: statistical analysis of large-scale smartwatch and mobile health data (>1 billion observations) from older adults to examine associations between wearable-derived measures and cognitive function.'
+summary: 'Project: statistical analysis of large-scale smartwatch and mobile health data (>1 billion observations) from older adults to examine associations between wearable-derived measures and cognitive function.'
 tags:
   - R
   - SAS
@@ -21,7 +21,7 @@ image:
 
 Wearable devices and smartphones now generate continuous, high-resolution behavioral and physiological data at a scale that was impossible to collect in traditional epidemiological studies. The Electronic Framingham Heart Study (eFHS) is one of the first large cohort studies to integrate this data at scale, capturing smartwatch-derived measures from thousands of participants over extended follow-up periods.
 
-This PhD project analyzes that data to investigate whether and how digital biomarkers derived from wearables (activity patterns, heart rate variability, sleep signatures) associate with cognitive function in older adults.
+This project analyzes that data to investigate whether and how digital biomarkers derived from wearables (activity patterns, heart rate variability, sleep signatures) associate with cognitive function in older adults.
 
 ## Scale
 
@@ -39,8 +39,8 @@ The dataset spans **more than 1 billion observations**, requiring statistical me
 - He, J., et al. *Associations Between Smartwatch-Derived Measures and Cognitive Function: Findings from the Electronic Framingham Heart Study.* In Review, 2025.
 - Zhang, Y., ..., He, J., et al. *Factors Associated with Longitudinal Digital Survey Engagement and Smartwatch Usage in the Electronic Framingham Heart Study.* In Review, 2025.
 
-## Advisor
+## Project Advisor
 
-[Prof. Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/), Department of Biostatistics, Boston University School of Public Health
+Advised by [Prof. Chunyu Liu](https://www.bu.edu/sph/profile/chunyu-liu/), Department of Biostatistics, Boston University School of Public Health.
 
-_Completed PhD project (2024–2025)._
+_Completed project (2024–2025)._
