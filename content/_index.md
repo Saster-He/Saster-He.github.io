@@ -27,12 +27,12 @@ sections:
         <div class="now-grid">
 
         **PhD Research, Boston University Biostatistics**
-        Extending super learner methods for survival prediction in complex sampling designs, with applications to longitudinal clinical data. Advised by [Dr. Haolin (Leo) Li](https://sites.google.com/view/haolin-leo-li-phd/).
+        Extending super learner methods for survival prediction in complex sampling designs, with applications to longitudinal clinical data. Co-advised by [Dr. Haolin (Leo) Li](https://sites.google.com/view/haolin-leo-li-phd/) and [Dr. Scarlett Bellamy](https://www.bu.edu/sph/profile/scarlett-bellamy/).
 
         ---
 
         **Research Extern at Vertex Pharmaceuticals** _(Aug 2025 to Present)_
-        Building a multi-agent system that automates the Tables, Figures, and Listings (TFL) pipeline for clinical trial submissions. Statistical programmers drive LLM agents through a Shiny interface to handle SDTM mapping, dataset construction, and output generation.
+        Built a Shiny/button-driven automation workflow for clinical Tables, Figures, and Listings (TFL) generation. Current work adds an initial-stage LLM-agent layer so statistical programmers can request auto TFL generation in natural language instead of clicking UI buttons.
 
         </div>
     design:
