@@ -35,11 +35,6 @@ sections:
         Built a Shiny/button-driven automation workflow for clinical Tables, Figures, and Listings (TFL) generation. Current work adds an initial-stage LLM-agent layer so statistical programmers can request auto TFL generation in natural language instead of clicking UI buttons.
 
         </div>
-    design:
-      background:
-        gradient_start: '#f8faff'
-        gradient_end: '#f1f5f9'
-        gradient_angle: 160
 
   - block: collection
     content:
