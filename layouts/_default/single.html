@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="wrap page">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.lead }}<div class="lead">{{ $.RenderString (dict "display" "block") . }}</div>{{ end }}
+  {{ partial "entries.html" . }}
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</article>
+{{ end }}

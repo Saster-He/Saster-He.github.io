@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className = "js";</script>
+{{- $is404 := eq .Kind "404" }}
+{{- $title := site.Title }}
+{{- if $is404 }}{{ $title = printf "Page not found · %s" site.Title }}
+{{- else if not .IsHome }}{{ $title = printf "%s · %s" .Title site.Title }}{{ end }}
+{{- $desc := site.Params.description }}
+{{- with .Description }}{{ $desc = . }}{{ else }}{{ with .Params.summary }}{{ $desc = . | plainify }}{{ end }}{{ end }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="{{ site.Params.author }}">
+{{- if .Params.noindex }}
+<meta name="robots" content="noindex">
+{{- end }}
+{{- if not $is404 }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- end }}
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141417" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="preload" href="{{ "fonts/source-serif-4-latin-opsz-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- if and .IsHome site.Data.bwv846 }}
+{{- $js := resources.Get "js/score.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{- end }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with resources.Get "images/portrait-recto.jpg" }}
+{{- $og := .Fill "800x1000 Center q82" }}
+<meta property="og:image" content="{{ $og.Permalink }}">
+<meta property="og:image:width" content="{{ $og.Width }}">
+<meta property="og:image:height" content="{{ $og.Height }}">
+<meta property="og:image:alt" content="Portrait of Jie He">
+{{- end }}

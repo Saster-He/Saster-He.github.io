@@ -1,0 +1,16 @@
+{{- /* One markup for both layouts: a rail on wide screens, a top bar on narrow ones (CSS decides).
+       Project pages count as Research; /cv/ and the 404 page mark no item. */ -}}
+{{- $here := .RelPermalink }}
+{{- $parent := "" }}
+{{- if eq .Section "project" }}{{ $parent = "research/" | relURL }}{{ end }}
+<header class="site-nav">
+  <a class="site-name" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  <nav aria-label="Main">
+    <ul>
+      {{- range site.Menus.main }}
+      {{- $url := .URL }}
+      <li><a href="{{ $url }}"{{ if eq $url $here }} aria-current="page"{{ else if eq $url $parent }} aria-current="true"{{ end }}><span class="nh" aria-hidden="true"></span>{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>

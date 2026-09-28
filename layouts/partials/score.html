@@ -1,0 +1,24 @@
+{{- /* BWV 846 ribbon + player. Renders only when data/bwv846.json exists (see tools/score/README.md).
+       Without JavaScript the native audio controls stay visible and the ribbon stays faint. */ -}}
+{{- with site.Data.bwv846 }}
+{{- $label := "J. S. Bach, Prelude in C major, BWV 846" }}
+<section class="score" aria-label="Music">
+  <div class="ribbon" aria-hidden="true">
+    <div class="track">
+      <img src="{{ "music/bwv846.svg" | relURL }}" alt="" width="{{ math.Round .svg.width | int }}" height="{{ math.Round .svg.height | int }}" decoding="async">
+      <div class="veil"></div>
+      <div class="playhead"></div>
+    </div>
+  </div>
+  <div class="player">
+    <button class="play" type="button" aria-pressed="false" aria-label="Play {{ $label }}">
+      <svg class="i-play" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M5 3.2v9.6L12.6 8z" fill="currentColor"/></svg>
+      <svg class="i-pause" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M4.5 3.5h2.2v9H4.5zM9.3 3.5h2.2v9H9.3z" fill="currentColor"/></svg>
+    </button>
+    <p class="credit">J. S. Bach · Prelude in C&nbsp;major, BWV&nbsp;846&nbsp;— Kimiko&nbsp;Ishizaka&nbsp;·&nbsp;<a href="https://welltemperedclavier.org/">CC0</a></p>
+    <span class="counter" aria-hidden="true" hidden>m. 1 / {{ .bars }}</span>
+    <audio src="{{ "music/bwv846.mp3" | relURL }}" preload="none" controls></audio>
+  </div>
+  <script type="application/json" id="bwv846-data">{{ . | jsonify | safeJS }}</script>
+</section>
+{{- end }}

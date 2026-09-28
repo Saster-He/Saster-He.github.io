@@ -1,0 +1,9 @@
+<footer class="site-footer wrap">
+  <div class="footer-inner">
+    {{- if not .IsHome }}
+    {{- $p := site.Params }}
+    <p class="footer-links"><span class="grp"><a href="mailto:{{ $p.email }}">Email</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="{{ $p.scholar }}">Google Scholar</a></span><span class="sep brk" aria-hidden="true">&nbsp;·</span> <span class="grp"><a href="{{ $p.github }}">GitHub</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="{{ $p.linkedin }}">LinkedIn</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="{{ "cv/" | relURL }}">CV</a></span></p>
+    {{- end }}
+    <p class="copyright">© {{ now.Year }} {{ site.Params.author }}</p>
+  </div>
+</footer>
