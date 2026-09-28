@@ -1,36 +1,54 @@
-# [Hugo Résumé Theme](https://github.com/HugoBlox/theme-resume)
+# saster-he.github.io
 
-[![Screenshot](./.github/preview.png)](https://hugoblox.com/templates/)
+The personal academic website of Jie He, a biostatistics PhD student at Boston University: <https://saster-he.github.io/>.
 
-The Hugo **Résumé Template** empowers you to easily create your job-winning online résumé, showcase your expertise, and share your social profiles to grow your audience.
+It is a small [Hugo](https://gohugo.io/) site with hand-written templates. There is no theme, no JavaScript framework and no build step besides Hugo. GitHub Actions builds and publishes it on every push to `main` (see `.github/workflows/publish.yaml`).
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, block-based website builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## Run it locally
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+Install Hugo **0.136.5 extended** (the version the deploy uses), then from the repository root:
 
-[Check out the latest demo](https://hugo-resume-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+```sh
+hugo server
+```
 
-The integrated [**Hugo Blox**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+and open <http://localhost:1313/>. `hugo --minify` writes the finished site to `public/`.
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## Where things live
 
-## We ask you, humbly, to support this open source movement
+```
+config/_default/      site settings: hugo.yaml, params.yaml (email and profile links), menus.yaml (the nav)
+content/              the words: _index.md (Home), education.md, research.md, experience.md, cv.md, project/
+layouts/              HTML templates (baseof, single, list, 404, Home) and partials (nav, footer, photo, score, entries)
+assets/css/main.css   all styles, light and dark
+assets/js/score.js    the score player on Home (the only script file)
+assets/images/        the two portrait photos; Hugo makes the resized WebP versions at build time
+static/fonts/         Source Serif 4 and IBM Plex Mono (WOFF2) with their licences
+static/music/         the recording and the engraved score shown on Home
+data/bwv846.json      timing data that keeps the score in step with the recording
+tools/score/          offline scripts that produced the music files (not used by the build)
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+Education, Research and Experience entries are listed in the front matter of each page (`title`, `org`, `dates`, `text`, and an optional `link`). Edit them there.
+A page can also set `lead` (an opening paragraph) and `entries_title` (a heading above the entries, as on Research). Home takes `name_zh` and `role` from `content/_index.md`.
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## Music
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+The Home page plays J. S. Bach's Prelude in C major, BWV 846, from *The Well-Tempered Clavier*, Book I.
 
-## Demo credits
+- Recording: Kimiko Ishizaka, from the [Open Well-Tempered Clavier](https://welltemperedclavier.org/), released into the public domain under CC0.
+- Notes: Bach's, in the public domain.
+- Score: re-engraved with Verovio from a MuseScore transcription, with one missing bar restored.
 
-- [Unsplash](https://unsplash.com/) images
+To rebuild the score, the timing data or the audio file, follow `tools/score/README.md`.
+
+## Fonts
+
+- [Source Serif 4](https://github.com/adobe-fonts/source-serif) by Adobe, SIL Open Font License 1.1 (`static/fonts/OFL-source-serif-4.txt`).
+- [IBM Plex Mono](https://github.com/IBM/plex) by IBM, SIL Open Font License 1.1 (`static/fonts/OFL-ibm-plex-mono.txt`).
+
+Both are the Latin subsets published by [Fontsource](https://fontsource.org/), copied unchanged.
+
+## Licence
+
+`LICENSE.md` is the MIT licence that came with the original Hugo Blox template this site started from.
