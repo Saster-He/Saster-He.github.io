@@ -1,0 +1,11 @@
+# Offline tools for the score ribbon. The website itself does not use any of this.
+# Python 3.11. soundfile needs libsndfile >= 1.1 for MP3 (the wheel bundles it).
+verovio==6.3.0
+librosa==0.11.0
+numpy==2.4.6
+scipy==1.17.1
+soxr==1.1.0
+numba==0.67.0
+soundfile==0.14.0
+mutagen==1.48.1
+matplotlib==3.11.2  # only for align.py --plots
