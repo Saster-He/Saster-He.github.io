@@ -1,52 +1,6 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
-# Appearance
-appearance:
-  mode: system
-  color: indigo
-
-# SEO
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: 'Boston University'
-    description: 'Jie He — PhD student in Biostatistics at Boston University. Building statistical and machine learning methods for clinical trial design, TFL automation, and early-stage natural-language LLM agents for clinical research workflows.'
-    twitter: ''
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
-
-# Site header
-header:
-  navbar:
-    enable: true
-    blox: floating-theme-toggler
-
-# Site footer
-footer:
-  copyright:
-    notice: '© {year} Jie He'
-    license:
-      enable: false
-
-# Localization
-locale:
-  date_format: 'Jan 2006'
-  time_format: '3:04 PM'
-
-# Site features
-features:
-  math:
-    enable: false
-  privacy_pack:
-    enable: false
+author: Jie He
+description: "Jie He — biostatistics PhD student at Boston University working on survival prediction for complex sampling designs."
+email: hejies@bu.edu
+scholar: https://scholar.google.com/citations?user=L5iMhdgAAAAJ&hl=en
+github: https://github.com/Saster-He
+linkedin: https://www.linkedin.com/in/jiesh/

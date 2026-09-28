@@ -1,0 +1,19 @@
+{{- /* Dated entries from front matter: title, org, dates, text (Markdown), link (optional).
+       The page may also set entries_title: a heading above the entries (entry titles then become h3). */ -}}
+{{ with .Params.entries }}
+{{ $sub := $.Params.entries_title }}
+<section class="entries">
+  {{ with $sub }}<h2 class="entries-title">{{ . }}</h2>{{ end }}
+  {{ range . }}
+  <article class="entry">
+    {{ if $sub }}<h3>{{ $.RenderString .title }}</h3>{{ else }}<h2>{{ $.RenderString .title }}</h2>{{ end }}
+    {{ if or .org .dates }}<p class="meta">{{ with .org }}{{ $.RenderString . }}{{ end }}{{ if and .org .dates }}<span class="sep" aria-hidden="true">&nbsp;·</span> {{ end }}{{ with .dates }}<span class="dates">{{ . }}</span>{{ end }}</p>{{ end }}
+    {{ with .text }}<div class="entry-text">{{ $.RenderString (dict "display" "block") . }}</div>{{ end }}
+    {{ with .link }}
+    {{ $target := site.GetPage (strings.TrimSuffix "/" .) }}
+    <p class="more"><a href="{{ with $target }}{{ .RelPermalink }}{{ else }}{{ strings.TrimPrefix "/" . | relURL }}{{ end }}">More{{ with $target }}<span class="vh">: {{ .Title }}</span>{{ end }}<svg viewBox="0 0 16 10" width="16" height="10" aria-hidden="true" focusable="false"><path d="M1 5h13M10 1.5 13.5 5 10 8.5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a></p>
+    {{ end }}
+  </article>
+  {{ end }}
+</section>
+{{ end }}

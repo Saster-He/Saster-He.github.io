@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{- $p := site.Params }}
+<div class="wrap hero">
+  {{ partial "portrait.html" . }}
+  <div class="intro">
+    <h1>{{ .Title }}{{ with .Params.name_zh }} <span class="zh" lang="zh-Hans">{{ . }}</span>{{ end }}</h1>
+    {{ with .Params.role }}<p class="role">{{ range $i, $part := split . " · " }}{{ if $i }}<span class="sep"> · </span>{{ end }}<span class="part">{{ $part }}</span>{{ end }}</p>{{ end }}
+    {{ .Content }}
+    <p class="links"><span class="grp"><a href="{{ "cv/" | relURL }}">CV</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="mailto:{{ $p.email }}">Email</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="{{ $p.scholar }}">Google Scholar</a></span><span class="sep brk" aria-hidden="true">&nbsp;·</span> <span class="grp"><a href="{{ $p.github }}">GitHub</a><span class="sep" aria-hidden="true">&nbsp;·</span> <a href="{{ $p.linkedin }}">LinkedIn</a></span></p>
+  </div>
+</div>
+{{ partial "score.html" . }}
+{{ end }}
