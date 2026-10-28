@@ -14,6 +14,7 @@ entries:
     org: University of North Carolina at Chapel&nbsp;Hill
     dates: 2019 – 2020
     text: >-
+      Advised by [Prof.&nbsp;Donglin Zeng](https://sph.umich.edu/faculty-profiles/zeng-donglin.html).
       Coursework in survival and longitudinal analysis, causal inference and
       clinical study design, alongside real analysis, stochastic modeling and
       parallel computing.
